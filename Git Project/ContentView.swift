@@ -10,12 +10,15 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         NavigationView {
-            NavigationLink(destination: ModalView()) {
-                Text("Go Next")
-                    .foregroundColor(.purple)
-           
+            VStack {
+                Text("This is Content View")
+                NavigationLink(destination: ModalView()) {
+                    Text("Go Next")
+                        .foregroundColor(.purple)
+               
+                }
+                .navigationTitle("Xcode and Git")
             }
-            .navigationTitle("Xcode and Git")
         }
         
     }
